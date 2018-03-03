@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+  <title>Code simulator</title>
+
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+
+<!-- requirements for pytutor.js -->
+<script type="text/javascript" src="js/d3.v2.min.js"></script>><!--if d3 is used then we shooul use this min file to use various functions that are predefined in min file -->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script><!--if jquery is used then we should use this-->
+<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script> <!-- for handling back button and URL hashes -->
+<script type="text/javascript" src="js/jquery.ba-dotimeout.min.js"></script> <!-- for event debouncing- is any kind of hardware device or software that ensures that only a single signal will be acted upon for a single opening or closing of a contact. When you press a key on your computer keyboard , you expect a single contact to be recorded by your computer. -->
+
+
+<script type="text/javascript" src="js/jquery.jsPlumb-1.3.10-all-min.js "></script> <!--for svg connectors-->
+<script type="text/javascript" src="js/diff_match_patch.js"></script><!--diff:for comparing two texts and finding the commonalities
+match:used to mah the patterns with patterns in library files
+patch:creating patches while comparing andfinally adding those patches with the final statements-->
+
+<script type="text/javascript" src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script> <!-- for sliders and other UI elements -->
+<link type="text/css" href="js/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" />
+
+<!-- for annotation bubbles -->
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<link type="text/css" href="css/jquery.qtip.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/pytutor.js"></script>
+<link rel="stylesheet" href="css/pytutor.css"/>
+
+<script type="text/javascript" src="js/holistic.js"></script>
+<link rel="stylesheet" href="css/holistic.css"/>
+
+<!-- requirements for opt-frontend.js -->
+
+<!-- Ace online code editor -->
+<script type="text/javascript" src="js/ace/src-min-noconflict/ace.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/opt-frontend-common.js"></script>
+<script type="text/javascript" src="js/opt-frontend.js"></script>
+<link rel="stylesheet" href="css/opt-frontend.css"/>
+
+<!-- include this AFTER opt-frontend.js so that configuration
+     global variables are already defined at load time -->
+<script type="text/javascript" src="js/togetherjs/togetherjs-min.js"></script>
+
+<script type="text/javascript" src="js/socket.io-client/socket.io.js"></script>
+
+<script type="text/javascript" src="js/opt-testcases.js"></script>
+<link rel="stylesheet" href="css/opt-testcases.css"/>
+
+<!-- insert google-analytics.txt contents here -->
+
+</head>
+
+<body>
+
+
+<div id="pyInputPane">
+
+<div id="codeInputWarnings">Write C code here:
+
+  <select id="pythonVersionSelector" style="display: none;">
+    <option value="c">C</option>
+  </select>
+
+</div>
+
+
+<div id=||"codeInputPane"></div> <!-- populate with a CodeMirror or Ace code editor instance -->
+<div id="surveyPane"></div>
+
+<p>
+<button id="executeBtn" class="bigBtn" type="button">Visualize Execution</button>
+</p>
+
+
+
+<div id="testCasesPane"></div>
+
+
+
+</div>
+
+
+<div id="pyOutputPane">
+</div>
+
+
+</body>
+</html>
