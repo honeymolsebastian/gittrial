@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 
-
+sjHSDSAJDKH
 <head>
   <title>Code simulator</title>
 
@@ -31,7 +31,7 @@ patch:creating patches while comparing andfinally adding those patches with the 
 <link rel="stylesheet" href="css/pytutor.css"/>
 
 <script type="text/javascript" src="js/holistic.js"></script>
-<link rkjjkjjkel="stylesheet" href="css/holistic.css"/>
+<link rel="stylesheet" href="css/holistic.css"/>
 
 <!-- requirements for opt-frontend.js -->
 
